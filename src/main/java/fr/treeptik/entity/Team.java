@@ -12,7 +12,7 @@ import javax.persistence.OneToMany;
 
 @Entity
 @DiscriminatorValue("Team")
-public class Team extends Membre implements Serializable{
+public class Team implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
