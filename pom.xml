@@ -23,8 +23,6 @@
 		<spring.security>3.2.3.RELEASE</spring.security>
 	</properties>
 
-
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
