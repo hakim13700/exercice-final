@@ -71,13 +71,15 @@ public class PetitDej implements Serializable{
 		this.commentaire = commentaire;
 	}
 
-	public List<Membre> getMembres() {
+	public List<Membre> getMembre() {
 		return membre;
 	}
 
-	public void setMembres(List<Membre> membres) {
-		this.membre = membres;
+	public void setMembre(List<Membre> membre) {
+		this.membre = membre;
 	}
+
+	  
 
 	
 }

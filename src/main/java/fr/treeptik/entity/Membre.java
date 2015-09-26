@@ -77,7 +77,23 @@ public class Membre implements Serializable{
 	public void setEncryptPassword(String encryptPassword) {
 		this.encryptPassword = encryptPassword;
 	}
+
+	public Team getTeam() {
+		return team;
+	}
+
+	public void setTeam(Team team) {
+		this.team = team;
+	}
+
+	public PetitDej getPetitDej() {
+		return petitDej;
+	}
+
+	public void setPetitDej(PetitDej petitDej) {
+		this.petitDej = petitDej;
+	}
 	
-	
+	 
 
 }
