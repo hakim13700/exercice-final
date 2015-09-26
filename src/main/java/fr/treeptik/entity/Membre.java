@@ -34,6 +34,9 @@ public class Membre implements Serializable{
 	
 	@ManyToOne
 	private Team team;
+	
+	@ManyToOne
+	private PetitDej petitDej;
 
 	public Integer getId() {
 		return id;

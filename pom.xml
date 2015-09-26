@@ -8,7 +8,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<jdbc.url>jdbc:mysql://localhost:3306/exercice-5</jdbc.url>
+		<jdbc.url>jdbc:mysql://localhost:3306/exercice-final</jdbc.url>
 		<jdbc.user>root</jdbc.user>
 		<jdbc.password>root</jdbc.password>
 

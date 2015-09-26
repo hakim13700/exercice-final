@@ -28,7 +28,7 @@ public class PetitDej implements Serializable{
 	private String commentaire;
 	
 	@OneToMany(mappedBy = "petitDej")
-	private List<Membre> membres;
+	private List<Membre> membre;
 	
 
 	public Integer getId() {
@@ -72,11 +72,11 @@ public class PetitDej implements Serializable{
 	}
 
 	public List<Membre> getMembres() {
-		return membres;
+		return membre;
 	}
 
 	public void setMembres(List<Membre> membres) {
-		this.membres = membres;
+		this.membre = membres;
 	}
 
 	
