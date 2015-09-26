@@ -34,7 +34,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 @Configuration
 @ComponentScan(basePackages = "fr.treeptik")
-//@EnableWebMvc
+@EnableWebMvc
 @PropertySource(value = "classpath:config.properties", name = "config")
 @EnableTransactionManagement
 @EnableJpaRepositories("fr.treeptik.dao")
