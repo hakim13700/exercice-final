@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Acceuil</title>
-<link href="../../style/bootstrap-3.3.5-dist/css/bootstrap.min.css"
+<link href="style/bootstrap-3.3.5-dist/css/bootstrap.min.css"
 	rel="stylesheet">
 </head>
 <body>
@@ -28,15 +28,26 @@
 					class="form-control" />
 			</div>
 		</div>
-
+		
 		<div class="form-group">
-			<label class="control-label col-sm-2" for="type">Type
+			<label class="control-label col-sm-2" for="date">Date
 				 :</label>
 			<div class="col-sm-6">
-				<form:input path="type" id="type"
-					class="form-control" />
-			</div>
-		</div>
+				<form:input type="date" path="date" id="date" 
+ 					class="form-control" />  
+				</div> 
+		</div> 
+
+<!-- 		<div class="form-group"> -->
+<!-- 				<label class="control-label col-sm-2" for="role">Type : </label> -->
+<!-- 				<div class="col-sm-10"> -->
+<%-- 					<form:select id="type" class="form-control" path="type"> --%>
+<%-- 						<form:option value="">Sélectionner un type</form:option> --%>
+<%-- 						<form:option value="Sucre">Sucré</form:option> --%>
+<%-- 						<form:option value="Sale">Salé</form:option> --%>
+<%-- 					</form:select> --%>
+<!-- 				</div> -->
+<!-- 			</div> -->
 
 <!-- 		<div class="form-group"> -->
 <!-- 			<label class="control-label col-sm-2" for="membre.id">Membre -->
@@ -53,7 +64,7 @@
 				 :</label>
 			<div class="col-sm-6">
 				<form:input path="commentaire" id="commentaire"
-					class="form-control" />
+ 					class="form-control" /> 
 			</div>
 		</div>
 
@@ -63,5 +74,10 @@
 		</div>
 			</div>
 	</form:form>
+	
+	<br />
+
+	<a href="demarage.html">Ecran d'acceuil</a>
+	
 </body>
 </html>

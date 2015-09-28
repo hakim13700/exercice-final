@@ -14,30 +14,12 @@
 	<c:if test="${not empty error}">
 		<label style="color: red;"><c:out value="${error}" /></label>
 	</c:if>
-		
-	<table class="table-striped table-bordered table-condensed ">
-		<tbody>
-			<tr>
-				<th>Nom</th>
-<!-- 				<th>Type</th> -->
-				<th>Date</th>
-				<th>Commentaire</th>
-			</tr>
-			<c:forEach items="${petitdejs}" var="petitdej">
-				<tr>
-					<td>${petitdej.nom}</td>
-<%-- 					<td>${petitdej.type}</td> --%>
-					<td>${petitdej.date}</td>
-					<td>${petitdej.commentaire}</td>
-					<td><a href="edit.html?id=${petitdej.id}">éditer</a> <a
-						href="delete.html?id=${petitdej.id}">supprimer</a></td>
-				</tr>
-			</c:forEach>
-		</tbody>
-	</table>
-	<br />
 
 	<a href="acceuil.html">new petit dejeuner</a>
+	<br /><br />
+
+	<a href="membre/new.html">new membre</a>
+	
 
 </body>
 </html>

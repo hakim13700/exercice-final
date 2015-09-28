@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Acceuil</title>
-<link href="style/bootstrap-3.3.5-dist/css/bootstrap.min.css"
+<link href="../style/bootstrap-3.3.5-dist/css/bootstrap.min.css"
 	rel="stylesheet">
 </head>
 <body>
@@ -19,25 +19,21 @@
 		<tbody>
 			<tr>
 				<th>Nom</th>
-<!-- 				<th>Type</th> -->
-				<th>Date</th>
-				<th>Commentaire</th>
+				<th>Prenom</th>
 			</tr>
-			<c:forEach items="${petitdejs}" var="petitdej">
+			<c:forEach items="${membres}" var="membre">
 				<tr>
-					<td>${petitdej.nom}</td>
-<%-- 					<td>${petitdej.type}</td> --%>
-					<td>${petitdej.date}</td>
-					<td>${petitdej.commentaire}</td>
-					<td><a href="edit.html?id=${petitdej.id}">éditer</a> <a
-						href="delete.html?id=${petitdej.id}">supprimer</a></td>
+					<td>${membre.firstName}</td>
+					<td>${membre.lastName}</td>
+					<td><a href="edit.html?id=${membre.id}">éditer</a> <a
+						href="delete.html?id=${membre.id}">supprimer</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
 	<br />
 
-	<a href="acceuil.html">new petit dejeuner</a>
+	<a href="new.html">new membre</a>
 
 </body>
 </html>

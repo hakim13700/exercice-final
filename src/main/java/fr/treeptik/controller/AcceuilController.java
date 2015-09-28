@@ -1,8 +1,14 @@
 package fr.treeptik.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -31,12 +37,21 @@ public class AcceuilController {
 		return modelAndView;
 	}
 	
+	@RequestMapping(value = "/demarage.html", method = RequestMethod.GET)
+	public ModelAndView demarage() throws ServiceException {
+		ModelAndView modelAndView = new ModelAndView("demarage");
+
+		return modelAndView;
+	}
+	
 
 	@RequestMapping(value = "/edit.html", method = RequestMethod.GET)
 	public ModelAndView edit(@ModelAttribute("id") Integer id) {
 		try {
-			ModelAndView modelAndView = new ModelAndView("petitDej-list");
-			
+			ModelAndView modelAndView = new ModelAndView("petitDej");
+			PetitDej petitDej = petitDejService.findById(id);
+			modelAndView.addObject("petitdej", petitDej);
+			modelAndView.addObject("membres", membreService.findAll());
 
 			return modelAndView;
 		} catch (Exception e) {
@@ -82,5 +97,14 @@ public class AcceuilController {
 		modelAndView.addObject("petitdej", new PetitDej());
 		return modelAndView;
 	}
+	
+	@InitBinder
+	protected void initBinder(WebDataBinder binder) throws Exception {
+		 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		    
+		    binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+		
+	}
+
 
 }
