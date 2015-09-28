@@ -1,0 +1,38 @@
+1 - Technologies utilisés
+
+- MAVEN
+- SPRING MVC
+- SPRING SECURITY
+- SPRING DATA
+- JPA/HIBERNATE
+
+- Theme BootStrap
+
+- Base de donnée MySQL
+
+- SERVER : Tomcat
+
+2 - A Problème rencontré
+
+	a) Difficultés à lier Spring sécurity avec la base de donnée du au manque de temps 
+	  donc j'ai mis directement un utilisateur et mot de passe (admin, 123456)
+	
+	b) Difficulté pour échanger des informations entre jsp et controller comme par exemple les enum
+	
+	Le problème est que je n'avais pas beaucoup de temps car j'avais des entretiens lundi après-midi et mardi matin.
+	
+ 3 - Parties à voir
+ 
+ -La partie login pour aceder à l'application
+ -Les controllers petitdej et membre qui permettent de gerer les pages jsp
+ -Les pages jsp petitdej (permet de creer un petit dejeuner), petitdej-list (la liste des petits dejeuner)
+   membre (pour creer un membre), membre-list (la liste des membres)
+   et acceuil (ecran d'acceuil qui permet de choisir le lien correspondant)
+   
+   4 - Ce que je souhaite faire prochainement
+   
+   -Spring security avec connexion a la base de données
+   -recuperer l'id de l'utilisateur qui se conecte
+   -test unitaire
+   -Améliorer les pages jsp
+
