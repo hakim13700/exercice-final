@@ -11,6 +11,9 @@
 	rel="stylesheet">
 </head>
 <body>
+<header>
+		<h1>Liste des  membres</h1>
+	</header>
 	<c:if test="${not empty error}">
 		<label style="color: red;"><c:out value="${error}" /></label>
 	</c:if>
@@ -19,6 +22,7 @@
 		<tbody>
 			<tr>
 				<th>Nom</th>
+				<th>Prenom</th>
 				<th>Prenom</th>
 			</tr>
 			<c:forEach items="${membres}" var="membre">

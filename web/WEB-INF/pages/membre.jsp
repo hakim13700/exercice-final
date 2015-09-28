@@ -37,6 +37,24 @@
 					class="form-control" />
 			</div>
 		</div>
+		
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="login">Login
+				 :</label>
+			<div class="col-sm-6">
+				<form:input path="login" id="login"
+					class="form-control" />
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="encryptPassword">Mot de passe
+				 :</label>
+			<div class="col-sm-6">
+				<form:input type="password" path="encryptPassword" id="encryptPassword"
+					class="form-control" />
+			</div>
+		</div>
 
 		<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">

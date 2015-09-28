@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Acceuil</title>
+<title>Ajouter un petit dejeuner</title>
 <link href="style/bootstrap-3.3.5-dist/css/bootstrap.min.css"
 	rel="stylesheet">
 </head>
@@ -34,6 +34,15 @@
 				 :</label>
 			<div class="col-sm-6">
 				<form:input type="date" path="date" id="date" 
+ 					class="form-control" />  
+				</div> 
+		</div> 
+		
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="prix">Prix
+				 :</label>
+			<div class="col-sm-6">
+				<form:input type="number" step="0.01" path="prix" id="prix" 
  					class="form-control" />  
 				</div> 
 		</div> 

@@ -27,9 +27,19 @@ public class PetitDej implements Serializable{
 	
 	private String commentaire;
 	
+	private Double prix;
+	
 	@OneToMany(mappedBy = "petitDej")
 	private List<Membre> membre;
 	
+
+	public Double getPrix() {
+		return prix;
+	}
+
+	public void setPrix(Double prix) {
+		this.prix = prix;
+	}
 
 	public Integer getId() {
 		return id;
